@@ -26,22 +26,18 @@ const TaskForm = ({ tasks, currentTask, handleAction }) => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        {error && <div class="error">{error}</div>}
-        <div>
-          <input
-            type="text"
-            name="task"
-            value={newTask}
-            onChange={handleChange}
-          />
-          <button className="submit">
-            {currentTask ? 'Update' : 'Create'}
-          </button>
-        </div>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit} class="task-form">
+      {error && <div class="error">{error}</div>}
+      <div class="task-field">
+        <input
+          type="text"
+          name="task"
+          value={newTask}
+          onChange={handleChange}
+        />
+        <button className="submit">{currentTask ? 'Update' : 'Create'}</button>
+      </div>
+    </form>
   );
 };
 

@@ -29,7 +29,7 @@ const App = () => {
       <h1>React Todo List</h1>
       <TaskList tasks={tasks} editTask={editTask} removeTask={removeTask} />
       <div className="new-task">
-        <div>New Task:</div>
+        <div className="label">New Task:</div>
         <TaskForm tasks={tasks} currentTask="" handleAction={createTask} />
       </div>
     </div>

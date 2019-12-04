@@ -47,6 +47,10 @@ li > div {
   border: 1px solid #999;
 }
 
+.label {
+  white-space: nowrap;
+}
+
 .new-task input[type='text'] {
   margin-left: 5px;
   border-radius: 5px;
@@ -59,6 +63,20 @@ li input[type='text'] {
   border: none;
   border-radius: 5px;
   padding: 2px 5px;
+}
+
+.task-form {
+  width: 100%;
+  display: flex;
+}
+
+.task-field {
+  width: 100%;
+  display: flex;
+}
+
+.task-form input[type='text'] {
+  width: 100%;
 }
 
 button {
