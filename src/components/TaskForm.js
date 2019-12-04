@@ -36,7 +36,9 @@ const TaskForm = ({ tasks, currentTask, handleAction }) => {
             value={newTask}
             onChange={handleChange}
           />
-          <button className="submit">Submit</button>
+          <button className="submit">
+            {currentTask ? 'Update' : 'Create'}
+          </button>
         </div>
       </form>
     </div>
